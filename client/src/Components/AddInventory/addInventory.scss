@@ -1,0 +1,196 @@
+@import '../../styles/partials/common-styles';
+
+.add-inventory {
+    margin: 0;
+
+
+
+
+    &__header {
+        @include titilliumSemi;
+        width: 100%;
+        font-size: $m-h1-font-size;
+        border-bottom: 1px solid $box-border-color;
+    
+    }
+
+    &__details {
+    
+        margin: 0 6%;
+
+
+        &-header {
+            @include titilliumSemi;
+            font-size: $m-h2-font-size;
+        }
+
+        &-item {
+            margin-bottom: 16px;
+            @include commonFlex(none,column,none);
+      
+            
+            &-label {
+                margin-bottom: 4px;
+                @include titilliumSemi;
+                font-size: $m-h3-font-size;
+       
+            }
+
+            &-input {
+                border-radius: 20px;
+                height: 36px;
+                border: 1px solid $box-border-color;
+                padding-left: 1em;
+   
+            }
+        }
+
+        &-description {
+            @include commonFlex(none,column,none);
+            margin-bottom: 16px;
+            
+            &-label {
+                margin-bottom: 4px;
+                @include titilliumSemi;
+                font-size: $m-h3-font-size;
+            }
+
+            &-input {
+                @include titilliumReg;
+                border-radius: 20px;
+                height: 120px;
+                border: 1px solid $box-border-color;
+                vertical-align: top;
+                padding-left: 16px;
+                padding-top: 8px;
+            }
+        }
+
+        &-select {
+            @include commonFlex(none,column,none);
+            
+            &-label {
+                @include titilliumSemi;
+                font-size: $m-h3-font-size;
+                margin-bottom: 4px;
+            }
+
+            &-field {
+                border-radius: 20px;
+                height: 36px;
+                border: 1px solid $box-border-color;
+                padding-left: 1em;
+            }
+        }
+    }
+
+    &__availability {
+
+
+        &-header {
+            @include titilliumSemi;
+            font-size: $m-h2-font-size;
+            border-top: 1px solid $box-border-color;
+
+        }
+
+        &-status {
+            margin-bottom: 1em;
+
+            &-header {
+                @include titilliumSemi;
+                font-size: $m-h3-font-size;
+                margin: 0 6%;
+                margin-bottom: 0.5em;
+            }
+
+            &-options {
+                @include commonFlex(space-between,row,none);
+                margin: 0 6%;
+
+                &-selectors {
+                    margin:0;
+                    margin: 0 6%;
+
+                    &-field {
+                        border: 1px solid $box-border-color;
+                        @include titilliumReg;
+                    }
+
+                    &-label {
+                        @include titilliumReg;
+                        font-size: $m-p-font-size;
+  
+                    }
+                }
+            }
+        }
+
+        &-qty {
+
+            @include commonFlex(none,column,none);
+            margin: 0 6%;
+            margin-bottom: 1em;
+
+            &-label {
+                @include titilliumSemi;
+                font-size: $m-h3-font-size;
+            }
+            
+
+            &-input {
+                @include titilliumReg;
+                border-radius: 20px;
+                height: 36px;
+                border: 1px solid $box-border-color;
+                padding-left: 1em;
+            }
+        }
+
+        &-warehouse {
+            @include commonFlex(none,column,none);
+            margin: 0 6%;
+            margin-bottom: 1em;
+
+            &-label {
+                @include titilliumSemi;
+                font-size: $m-h3-font-size;
+            }
+
+            &-select {
+                @include titilliumReg;
+                border-radius: 20px;
+                height: 36px;
+                border: 1px solid $box-border-color;
+                padding-left: 1em;
+            }
+        }
+
+        &-buttons {
+            @include titilliumSemi;
+            @include commonFlex(space-around,row,none);
+            font-size: $m-p-font-size;
+            background-color: $light-grey;
+            padding-top: 1em;
+            
+
+            &-cancel {
+        
+                width: 139px;
+                border-radius: 20px;
+                height: 36px;
+                border: 1px solid $box-border-color;
+                background-color: white;
+            }
+
+            &-add {
+                color: white;
+                width: 139px;
+                border-radius: 20px;
+                height: 36px;
+                border: 1px solid $box-border-color;
+                background-color: $instock-indigo;
+            }
+        }
+    }
+}
