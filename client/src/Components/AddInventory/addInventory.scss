@@ -3,37 +3,43 @@
 .add-inventory {
     margin: 0;
 
+    &__head {
 
-
-
-    &__header {
-        @include titilliumSemi;
-        width: 100%;
-        font-size: $m-h1-font-size;
-        border-bottom: 1px solid $box-border-color;
-    
+        &-header {
+            margin: 0 6%;
+            padding: 1em 0;;
+            @include titilliumSemi;
+            width: 100%;
+            font-size: $m-h1-font-size;
+        }
     }
 
-    &__details {
-    
-        margin: 0 6%;
 
+
+
+    &__details {
+
+        border-top: 1px solid $box-border-color;
+  
+        padding-bottom : 1.5em;
 
         &-header {
             @include titilliumSemi;
             font-size: $m-h2-font-size;
+            margin: 0 6%;
+            padding: 1em 0;
         }
 
         &-item {
             margin-bottom: 16px;
             @include commonFlex(none,column,none);
+            margin: 0 6%;
+            margin-bottom: 1em;
       
-            
             &-label {
                 margin-bottom: 4px;
                 @include titilliumSemi;
                 font-size: $m-h3-font-size;
-       
             }
 
             &-input {
@@ -48,6 +54,8 @@
         &-description {
             @include commonFlex(none,column,none);
             margin-bottom: 16px;
+            margin: 0 6%;
+            margin-bottom: 1em;
             
             &-label {
                 margin-bottom: 4px;
@@ -63,11 +71,13 @@
                 vertical-align: top;
                 padding-left: 16px;
                 padding-top: 8px;
+                resize: none;
             }
         }
 
         &-select {
             @include commonFlex(none,column,none);
+            margin: 0 6%;
             
             &-label {
                 @include titilliumSemi;
@@ -85,14 +95,18 @@
     }
 
     &__availability {
+        border-top: 1px solid $box-border-color;
 
+        &-head {
 
-        &-header {
-            @include titilliumSemi;
-            font-size: $m-h2-font-size;
-            border-top: 1px solid $box-border-color;
-
+            &-header {
+                @include titilliumSemi;
+                font-size: $m-h2-font-size;
+                margin-left: 6%;
+            }
         }
+
+
 
         &-status {
             margin-bottom: 1em;
@@ -107,10 +121,9 @@
             &-options {
                 @include commonFlex(space-between,row,none);
                 margin: 0 6%;
+                width: 60%;
 
                 &-selectors {
-                    margin:0;
-                    margin: 0 6%;
 
                     &-field {
                         border: 1px solid $box-border-color;
@@ -171,7 +184,7 @@
             @include commonFlex(space-around,row,none);
             font-size: $m-p-font-size;
             background-color: $light-grey;
-            padding-top: 1em;
+            padding: 1em 0;
             
 
             &-cancel {
