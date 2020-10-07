@@ -30,7 +30,7 @@ import arrowLogo from '../../assets/Icons/arrow_back-24px.svg';
 
                 <div className="add-inventory__details-select">
                     <label className="add-inventory__details-select-label">Category</label>
-                    <select className="add-inventory__details-select-field" placeholder="Please select"> Please Select </select>
+                    <select className="add-inventory__details-select-field" placeholder="Please select"/>
                 </div>
 
 
